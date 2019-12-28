@@ -1,6 +1,7 @@
 {
   "name": "greenback-ui",
   "version": "0.1.0",
+  "homepage": "https://cloud.callbackheaven.com/greenback-ui",
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.25",
