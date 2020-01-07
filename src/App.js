@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import LoginModal from './LoginModal'
+import AppCore from './AppCore'
 
 class App extends Component {
   render() {
-    const user = window.localStorage.getItem('user');
+    const token = window.localStorage.getItem("greenback-jwt-token");
 
     return (
       <div className="App">
-        <LoginModal/>
+        {token == null ? <LoginModal/> : <AppCore/>}
       </div>
     );
   }
